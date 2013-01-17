@@ -1,4 +1,4 @@
-package com.mkyong.rest;
+package com.vonage.ars.mockup;
  
 import java.net.URI;
 
