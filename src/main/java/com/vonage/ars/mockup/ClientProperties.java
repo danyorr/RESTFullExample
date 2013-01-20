@@ -4,6 +4,7 @@ import java.net.URI;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
@@ -14,6 +15,7 @@ public class ClientProperties {
 	
 	@GET
 	@Path("/clientproperties")
+	@Produces({"application/json"})
 	public Response redirect(@QueryParam("clientType") String clientType,
 			@QueryParam("clientVersion") String clientVersion,
 			@QueryParam("productName") String productName,

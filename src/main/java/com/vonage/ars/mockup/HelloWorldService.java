@@ -24,7 +24,7 @@ public class HelloWorldService {
 	@GET
 	@Path("/redirect/{param}")
 	public Response redirect(@PathParam("param") String status) {
-		URI location = UriBuilder.fromUri("http://localhost:8080/RESTfulExample/redirect/" + status + ".html").build(); 
+		URI location = UriBuilder.fromUri("../redirect/" + status + ".html").build(); 
 		return Response.temporaryRedirect(location).build();
 	}
 
